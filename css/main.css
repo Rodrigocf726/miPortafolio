@@ -249,7 +249,7 @@ h2.mis-proyectos{
     color: black;
 }
 
-.reto-info button:hover{
+.reto-info a:hover{
     color: white;
 }
 
