@@ -294,6 +294,12 @@ h2.mis-proyectos{
     font-size: 1.5rem;
 }
 
+.redes-sociales-title{
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 .footer .redes-sociales{
     color: white;
     display: flex;
