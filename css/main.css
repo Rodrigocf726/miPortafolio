@@ -1,335 +1,283 @@
 html{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 62.5%; /*1rem = 10px*/
-    background-color: #191c32;;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%; /*1rem = 10px*/
+  background-color: #191c32;;
 }
 
 *, *:before, *:after{
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img{
-    max-width: 100%;
-    /* display: block; */
+  max-width: 100%;
+  /* display: block; */
 }
 
 /* Reutilizables */
 .container{
-    max-width: 120rem;
-    margin: 0 auto;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 .btn{
-    padding: 1.2rem;
-    background-color: aqua;
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 1rem;
-    text-align: center;
-    display: block;
-    border: none;
-    transition: background-color .3s;
+  padding: 1.2rem;
+  background-color: aqua;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: block;
+  border: none;
+  transition: background-color .3s ease-in;
 }
 
 .btn:hover{
-    background-color: rgba(0, 255, 255, 0.288);
-    color: black;
+  background-color: rgba(0, 255, 255, 0.288);
+  color: black;
 }
 
 
 /* header */
 .header{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3rem;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .header .logo h2{
-    font-size: 1.5rem;
-    color: #fff;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 .logo span{
-    color: aqua;
+  color: aqua;
 }
 
 @media (min-width: 768px) { 
-    .header{
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.089);
-        padding: 1.8rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        /* position: fixed; */
-    }
+  .header{
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.089);
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      /* position: fixed; */
+  }
 
-    .header .logo h2{
-        font-size: 2.5rem;
-        color: #fff;
-    }
-    
-    .logo span{
-        color: aqua;
-    }
+  .header .logo h2{
+      font-size: 3.5rem;
+      color: #fff;
+  }
+  
+  .logo span{
+      color: aqua;
+  }
 }
 
 
 .navegacion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 768px) { 
-    .navegacion{
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 50%;
-    }
+  .navegacion{
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 50%;
+  }
 }
 
 
 .navegacion a{
-    text-decoration: none;
-    font-size: 2rem;
-    align-items: center;
-    padding: 1.5rem;
-    color: #fff;
-    transition: background-color .4s;
+  text-decoration: none;
+  font-size: 2rem;
+  align-items: center;
+  padding: 1.5rem;
+  color: #fff;
+  transition: background-color .4s ease-in;
 }
 
 .navegacion a:hover{
-    background-color: aqua;
-    color: black;
+  background-color: aqua;
+  color: black;
 }
 
 
 /* Principal sobre mi */
-
+/* 
 .principal{
-    padding: 2rem;
-}
+  padding: 2rem;
+} */
 
 .sobreMi{
-    color: white;
-    font-size: 4rem;
-    text-align: center;
+  color: white;
+  font-size: 4.5rem;
+  text-align: center;
 }
 
 .sobre-mi .imagen{
-    width: 20rem;
-    margin: 0 auto;
-    border: 3px solid aqua;
+  width: 20rem;
+  margin: 0 auto;
+  border: 3px solid aqua;
 }
 
 
 @media (min-width: 768px) { 
-    .sobre-mi{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        column-gap: 4rem;
-    }
+  .sobre-mi{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      column-gap: 4rem;
+  }
 
-    .sobre-mi .imagen{
-        padding: 2rem;
-        width: 40rem;
-    }
+  .sobre-mi .imagen{
+      padding: 2rem;
+      width: 40rem;
+  }
 }
 
 .sobre-mi-descripcion{
-    color: white;
-    padding: 2rem;
-    font-size: 1.8rem;
+  color: white;
+  padding: 2rem;
+  font-size: 2rem;
+  text-align: justify;
+}
+
+.sobre-mi-descripcion h2{
+  font-size: 3.2rem;
 }
 
 /* Proyectos */
+#proyectos{
+margin-bottom: 4rem;
+}
+
 h2.mis-proyectos{
-    color: white;
-    font-size: 3rem;
-    text-align: center;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
 }
 
 @media (min-width: 768px) { 
-    h2.mis-proyectos{
-        font-size: 5rem;
-    }
+  h2.mis-proyectos{
+      font-size: 5rem;
+  }
 }
-
 
 .card{
-    display: grid;
-    align-items: center;
-    border: 1px solid aqua;
-    width: 30rem;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
+  width: 30rem;
+  border: 1px solid aqua;
+  padding-bottom: 1rem;
+  margin: 1rem auto;
 }
 
+
 @media (min-width: 768px) { 
-    .proyectos{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .proyectos{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .card_header img{
-    width: 100%;
+  width: 100%;
 }
 
 .card_body h2{
-    color: white;
-    text-align: center;
-    font-size: 2rem;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .card_body p{
-    text-align: center;
-    color: white;
-    font-size: 1.8rem;
-    padding: .5rem;
+  text-align: center;
+  color: white;
+  font-size: 1.8rem;
+  padding: .5rem;
 }
 
-.card-footer a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    text-transform: uppercase;
+.card-footer a, .retos a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-.card-footer a:hover{
-    color: white;
+.card-footer a:hover, .retos a:hover{
+  color: white;
 }
 
 /* retos */
 .retos{
-    padding: 4rem;
-    display: grid;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.089);
+  padding: 4rem;
+  display: grid;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.089);
+  margin-bottom: 4rem;
 }
 
 
 @media (min-width: 768px) { 
-    .retos{
-        padding: 4rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        column-gap: 2rem;
-        background-color: rgba(255, 255, 255, 0.089);
-    }
-    
+  .retos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    background-color: rgba(255, 255, 255, 0.089);
+  }
 }
 
 
 .reto-info{
-    color: white;
-    font-size: 2rem;
+  color: white;
+  font-size: 2rem;
 }
 
 .reto-info h2{
-    text-align: center;
+  text-align: center;
 }
-
-.reto-info button{
-    cursor: pointer;
-}
-
-.reto-info a{
-    text-decoration: none;
-    color: black;
-}
-
-.reto-info a:hover{
-    color: white;
-}
-
-
 
 
 /* footer */
 
 .footer{
-    margin-top: 2rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.089);
+}
+
+.footer .datos{
+  padding: 2rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.redes-sociales h2{
+  color: #fff;
+  font-size: 3rem;
+}
+
+.footer .redes-sociales a{
+  font-size: 3rem;
+  color: #fff;
+  margin: 1rem;
+}
+
+@media (min-width: 768px) { 
+  .footer{
+    justify-content: space-evenly;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.089);
-}
+  }
 
-@media (min-width: 768px) { 
-    footer{
-        width: 100%;
-    }
-
-    .footer{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: rgba(255, 255, 255, 0.089);
-    }
-}
-
-.footer .footer-content{
-    padding-bottom: 1.5rem;;
-    color: white;
-}
-
-
-.footer .footer-content h2{
-    font-size: 2rem;
-}
-
-.footer .footer-content h5{
-    font-size: 1.5rem;
-}
-
-.redes-sociales-title{
-    color: #ffffff;
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.footer .redes-sociales{
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    width: 30rem;
-    padding-bottom: 2rem;
-    font-size: 2rem;
-}
-
-.footer .redes-sociales i{
-    color: white;
-}
-
-@media (min-width: 768px) { 
-    .footer .footer-content h2{
-        font-size: 3rem;
-    }
-    
-    .footer .footer-content h5{
-        font-size: 2rem;
-    }
-
-    .footer .redes-sociales{
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        width: 30rem;
-        padding-bottom: 2rem;
-        font-size: 4rem;
-    }
 }
