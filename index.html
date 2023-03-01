@@ -14,21 +14,28 @@
       <div class="logo">
         <h2>R<span>C</span></h2>
       </div>
-      <nav class="navegacion">
-        <a href="#">Inicio</a>
-        <a href="#sobre-mi">Sobre Mi</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
+			<div class="menu-navegacion">
+        <nav class="navegacion">
+          <a href="#">Inicio</a>
+          <a href="#sobre-mi">Sobre Mi</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="principal container" id="sobre-mi">
+    <div class="botones-menu">
+      <i class="fa-solid fa-bars burguer"></i>
+      <i class="fa-solid fa-close close"></i>
+    </div>
+
+    <main class="principal" id="sobre-mi">
       <h2 class="sobreMi">Sobre Mi</h2>
       <div class="sobre-mi">
-        <div class="imagen">
+        <div class="imagen container">
           <img src="img/perfil.png" alt="Rodrigo Castro" />
         </div>
-        <div class="sobre-mi-descripcion container">
+        <div class="sobre-mi-descripcion">
           <h2>Mi nombre es Rodrigo Castro</h2>
           <p>
             Soy un desarrollador de Software apasionado por el aprendizaje y
@@ -51,7 +58,7 @@
 
     <section class="container" id="proyectos">
       <h2 class="mis-proyectos">Mis proyectos</h2>
-      <div class="proyectos" id="proyectos">
+      <div class="proyectos container" id="proyectos">
         <div class="card">
           <div class="card_header">
             <img src="img/Tienda_muebles.png" alt="Tienda Muebles" />
@@ -173,5 +180,7 @@
 				</div>
 			</div>
     </footer>
+
+		<script src="js/app.js"></script>
   </body>
 </html>
